@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Progress Bar</title>
+
+    <link rel="stylesheet" href="progressbar.min.css">
+</head>
+<body>
+    <h1>jQuery Progress Bar</h1>
+
+    <div class="progressbar" id="example1"></div>
+
+    <button id="increase">Increase</button>
+    <button id="decrease">Decrease</button>
+    <button id="set-half">Set to 50%</button>
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="progressbar.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var progressbar = $('.progressbar').progressbar(100, 0);
+
+            $('#increase').on('click', function() {
+                progressbar.increase(5);
+            });
+
+            $('#decrease').on('click', function() {
+                progressbar.decrease(5);
+            });
+
+            $('#set-half').on('click', function() {
+                progressbar.setBar(0.5);
+            });
+
+        });
+    </script>
+
+</body>
+</html>

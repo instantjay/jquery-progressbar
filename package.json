@@ -1,0 +1,14 @@
+{
+  "name": "jQueryProgressBar",
+  "version": "1.0.0",
+  "description": "A lightweight jQuery progress bar.",
+  "private": true,
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-sass": "*",
+    "jquery": "^2.1.4",
+    "node-reset-scss": "*",
+    "time-grunt": "*"
+  }
+}
